@@ -1,0 +1,61 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+
+# SQLite databases
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.venv_local/
+
+# Node modules
+node_modules/
+tk-frontend/node_modules/
+
+# Build outputs
+dist/
+build/
+tk-frontend/dist/
+frontend-dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+
+# Logs
+*.log
+logs/
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Deploy packages
+releases/
+*.zip
+*.tar.gz
+
+# Uploads
+uploads/
+
+# Data
+data/
+
+# Non-source artifacts
+article/
+outputs/
+引用文献/

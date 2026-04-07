@@ -1,0 +1,56 @@
+﻿@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+@theme {
+  --color-primary: #F97316; /* 橙色主调 */
+  --color-secondary: #FB923C;
+  --color-accent: #FEFCE8;
+  --color-muted: #F3F4F6;
+  --color-background: #F9FAFB; /* 极浅灰背景 */
+  --color-foreground: #111827; /* 深灰字体 */
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+  
+  /* 自定义动画 */
+  --animate-fade-in-up-1: fade-in-up 0.8s ease-out 0s both;
+  --animate-fade-in-up-2: fade-in-up 0.8s ease-out 0.2s both;
+  --animate-fade-in-up-3: fade-in-up 0.8s ease-out 0.4s both;
+  --animate-fade-in-up-4: fade-in-up 0.8s ease-out 0.6s both;
+  --animate-fade-in-up-5: fade-in-up 0.8s ease-out 0.8s both;
+  --animate-float-slow: float-up-down 6s ease-in-out infinite;
+  --animate-float-slower: float-up-down 8s ease-in-out infinite;
+  --animate-float-slowest: float-up-down 10s ease-in-out infinite;
+  --animate-breathe: breathe 3s ease-in-out infinite;
+
+  --font-zcool: 'ZCOOL KuaiLe', cursive;
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float-up-down {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(0.98); }
+    50% { transform: scale(1.02); }
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  }
+}

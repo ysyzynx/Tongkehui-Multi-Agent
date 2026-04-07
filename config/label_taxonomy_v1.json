@@ -1,0 +1,181 @@
+{
+  "version": "v1.0.0",
+  "updated_at": "2026-03-26",
+  "notes": "Phase-0 label taxonomy baseline. Read-only config, no runtime behavior change.",
+  "groups": [
+    {
+      "group_id": "SCIENCE_REVIEW",
+      "group_name": "科学审查标签",
+      "description": "用于当前科学审查流程的一级维度标签",
+      "labels": [
+        {
+          "id": "SC-FACT-001",
+          "name": "事实准确性校验",
+          "aliases": ["科学事实准确性校验"],
+          "definition": "检查文本中的科学事实、定义、数值和结论是否准确。",
+          "positive_hints": ["事实", "定义", "数值", "实验结论", "准确", "误差"],
+          "negative_hints": ["虚构设定", "情绪表达", "剧情节奏"],
+          "priority": 1,
+          "enabled": true
+        },
+        {
+          "id": "SC-TERM-002",
+          "name": "专业术语适用性检查",
+          "aliases": ["术语适用性检查"],
+          "definition": "检查术语使用是否规范、是否适配目标年龄段和表达语境。",
+          "positive_hints": ["术语", "通俗解释", "受众", "可理解性", "概念门槛"],
+          "negative_hints": ["章节排版", "插图风格"],
+          "priority": 2,
+          "enabled": true
+        },
+        {
+          "id": "SC-LOGIC-003",
+          "name": "科学逻辑验证",
+          "aliases": ["科学逻辑校验"],
+          "definition": "检查因果链路、机制解释和前后推理是否自洽。",
+          "positive_hints": ["因果", "机制", "推理", "前后矛盾", "链路"],
+          "negative_hints": ["文风润色", "语气亲和"],
+          "priority": 3,
+          "enabled": true
+        },
+        {
+          "id": "SC-SOURCE-004",
+          "name": "引用来源建议",
+          "aliases": ["参考来源建议", "来源建议"],
+          "definition": "为关键事实提供可追溯来源建议并标注证据级别。",
+          "positive_hints": ["来源", "文献", "教材", "数据库", "权威机构"],
+          "negative_hints": ["主观感受", "文学修辞"],
+          "priority": 4,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "group_id": "VALUE_TAG",
+      "group_name": "儿童读物价值观标签",
+      "description": "借鉴论文任务的价值观识别标签基线（可扩展）",
+      "labels": [
+        {
+          "id": "VAL-TRAD-001",
+          "name": "向上向善",
+          "aliases": ["积极向上"],
+          "definition": "体现积极进取、乐观成长、向善行动。",
+          "positive_hints": ["乐观", "成长", "互助", "改善", "坚持"],
+          "negative_hints": ["冷漠", "破坏", "消极摆烂"],
+          "priority": 10,
+          "enabled": true
+        },
+        {
+          "id": "VAL-TRAD-002",
+          "name": "自强不息",
+          "aliases": ["坚韧不拔"],
+          "definition": "面对困难持续努力，不轻言放弃。",
+          "positive_hints": ["坚持", "克服困难", "持续尝试", "韧性"],
+          "negative_hints": ["半途而废", "逃避责任"],
+          "priority": 11,
+          "enabled": true
+        },
+        {
+          "id": "VAL-TRAD-003",
+          "name": "敬业乐群",
+          "aliases": ["合作担当"],
+          "definition": "体现责任意识、团队协作与公共精神。",
+          "positive_hints": ["协作", "分工", "责任", "服务集体"],
+          "negative_hints": ["推诿", "只顾个人"],
+          "priority": 12,
+          "enabled": true
+        },
+        {
+          "id": "VAL-TRAD-004",
+          "name": "艰苦奋斗",
+          "aliases": ["勤俭务实"],
+          "definition": "强调踏实努力、节约资源、长期投入。",
+          "positive_hints": ["勤奋", "务实", "节约", "长期投入"],
+          "negative_hints": ["铺张浪费", "投机取巧"],
+          "priority": 13,
+          "enabled": true
+        },
+        {
+          "id": "VAL-CIV-005",
+          "name": "诚信守信",
+          "aliases": ["诚实守约"],
+          "definition": "言行一致，遵守承诺，不欺骗。",
+          "positive_hints": ["诚实", "守约", "兑现承诺"],
+          "negative_hints": ["欺骗", "违约", "隐瞒真相"],
+          "priority": 14,
+          "enabled": true
+        },
+        {
+          "id": "VAL-CIV-006",
+          "name": "尊重他人",
+          "aliases": ["平等尊重"],
+          "definition": "尊重差异，平等对待他人。",
+          "positive_hints": ["尊重", "倾听", "平等", "包容"],
+          "negative_hints": ["歧视", "羞辱", "霸凌"],
+          "priority": 15,
+          "enabled": true
+        },
+        {
+          "id": "VAL-CIV-007",
+          "name": "责任担当",
+          "aliases": ["主动负责"],
+          "definition": "对个人行为和集体任务负责。",
+          "positive_hints": ["担当", "负责", "补救", "承认错误"],
+          "negative_hints": ["甩锅", "逃责"],
+          "priority": 16,
+          "enabled": true
+        },
+        {
+          "id": "VAL-CIV-008",
+          "name": "规则意识",
+          "aliases": ["遵规守纪"],
+          "definition": "遵守公共规则和安全规范。",
+          "positive_hints": ["规则", "安全规范", "秩序", "纪律"],
+          "negative_hints": ["违规", "破坏秩序"],
+          "priority": 17,
+          "enabled": true
+        },
+        {
+          "id": "VAL-SOC-009",
+          "name": "科学求真",
+          "aliases": ["实证精神"],
+          "definition": "尊重事实、证据和可验证方法。",
+          "positive_hints": ["观察", "实验", "证据", "验证", "复现"],
+          "negative_hints": ["伪科学", "主观臆断"],
+          "priority": 18,
+          "enabled": true
+        },
+        {
+          "id": "VAL-SOC-010",
+          "name": "创新创造",
+          "aliases": ["创新思维"],
+          "definition": "鼓励提出新思路并动手实现。",
+          "positive_hints": ["创新", "改进", "发明", "尝试新方法"],
+          "negative_hints": ["因循守旧", "拒绝尝试"],
+          "priority": 19,
+          "enabled": true
+        },
+        {
+          "id": "VAL-SOC-011",
+          "name": "生态环保",
+          "aliases": ["绿色发展"],
+          "definition": "关注生态保护与资源可持续利用。",
+          "positive_hints": ["环保", "节能", "循环利用", "生态保护"],
+          "negative_hints": ["污染", "浪费资源"],
+          "priority": 20,
+          "enabled": true
+        },
+        {
+          "id": "VAL-SOC-012",
+          "name": "家国情怀",
+          "aliases": ["公共关怀"],
+          "definition": "关心社会与国家发展，具备公共责任感。",
+          "positive_hints": ["公共利益", "社会贡献", "家国", "奉献"],
+          "negative_hints": ["极端个人主义", "漠视公共利益"],
+          "priority": 21,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}
