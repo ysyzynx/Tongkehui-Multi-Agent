@@ -98,7 +98,7 @@ npm run dev -- --host 0.0.0.0 --port 5173
 - DEEPSEARCH_API_KEY / DEEPSEARCH_*：DeepSearch 检索增强
 - SERPAPI_API_KEY：Google Scholar 检索（可选）
 
-注意：当前 settings.py 中存在默认明文 VOLCENGINE_API_KEY，建议迁移到 .env 并清理仓库敏感信息。
+注意：仓库不提供任何可直接使用的默认密钥，请在本地 .env 中自行填写 OPENAI、DEEPSEARCH、VOLCENGINE、SERPAPI 等密钥。
 
 ## 鉴权说明
 

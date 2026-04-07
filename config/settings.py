@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     DEEPSEARCH_SELF_CHECK: bool = True
 
     # Volcengine image generation settings
-    VOLCENGINE_API_KEY: str = "73e088d0-f63d-4c21-a386-3a8f46f28cd2"
+    VOLCENGINE_API_KEY: str = ""
     VOLCENGINE_IMAGE_MODEL: str = "doubao-seedream-5-0-260128"
 
     # SerpAPI (谷歌学术) settings

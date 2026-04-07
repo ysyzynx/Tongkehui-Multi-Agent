@@ -100,9 +100,16 @@ npm run dev -- --host 0.0.0.0 --port 5173
 - OPENAI_API_KEY / OPENAI_API_BASE：模型接口配置
 - LLM_MODEL / VISION_MODEL：文本/视觉模型
 - DEEPSEARCH_API_KEY / DEEPSEARCH_API_BASE：检索增强
+- VOLCENGINE_API_KEY / VOLCENGINE_IMAGE_MODEL：插画生成配置
 - SERPAPI_API_KEY：Scholar 检索（可选）
 
 建议将所有密钥配置放入 .env，不要提交到 Git 仓库。
+仓库不包含可直接使用的默认密钥，用户需要在本地环境中自行填写。
+
+推荐步骤：
+1. 复制 .env.example 为 .env
+2. 按需填写各平台 API Key
+3. 启动服务
 
 ## 认证机制
 
